@@ -1,1 +1,116 @@
+body {
+    background: #000;
+    color: white;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid red;
+}
+
+header h1 {
+    font-size: 45px;
+    color: red;
+    text-shadow: 0 0 12px red;
+    margin: 0;
+}
+
+header p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid red;
+    box-shadow: 0 0 10px red;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+
+.card p {
+    color: #ccc;
+}
+/* ======== SEÇÃO DE RECOMENDADOS ======== */
+
+.recomendados {
+    margin-top: 40px;
+}
+
+.recomendados h2 {
+    color: red;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Fila horizontal estilo Netflix */
+.fila-videos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
+    /* Deixa a barra de rolagem invisível */
+    scrollbar-width: none; 
+}
+.fila-videos::-webkit-scrollbar {
+    display: none;
+}
+
+/* Cada card */
+.rec-card {
+    min-width: 300px;       /* tamanho horizontal fixo para ficar tipo cards Netflix */
+    flex-shrink: 0;         /* impede de encolher */
+    text-align: left;
+}
+
+/* Vídeo */
+.rec-card iframe {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+    border: 2px solid red;
+}
+
+/* Título abaixo dos vídeos */
+.rec-card p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: red;
+    font-weight: 500;
+}: 500;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid red;
+    color: #777;
+}
