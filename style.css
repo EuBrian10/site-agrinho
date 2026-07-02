@@ -1,112 +1,204 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTNG - Agrinho Paraná</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* ===== HEADER ===== */
 
-<body>
+header {
+    background: linear-gradient(90deg, #556b2f, #2f6db5, #d4af37);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
 
-    <header>
-        <h1>CTNG</h1>
-        <p>Acessibilidade no Campo: Tecnologia, Inclusão e Desenvolvimento Rural</p>
-    </header>
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
 
-    <section class="intro">
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
 
-        <h2>Bem-vindo ao CTNG</h2>
+/* ===== INTRODUÇÃO ===== */
 
-        <p>
-            O Agrinho é um programa que incentiva a educação, a cidadania e o desenvolvimento sustentável.
-            Neste projeto, apresentamos como a acessibilidade pode transformar a vida das pessoas no meio
-            rural, permitindo que todos tenham oportunidades iguais para estudar, trabalhar e participar
-            da sociedade.
-        </p>
+.intro {
+    width: 85%;
+    margin: 35px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 8px solid #556b2f;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
 
-        <p>
-            A tecnologia tem um papel fundamental nessa transformação, oferecendo equipamentos,
-            máquinas adaptadas e recursos digitais que tornam o campo mais inclusivo, produtivo e
-            acessível para todos.
-        </p>
+.intro h2 {
+    color: #2f6db5;
+    margin-top: 0;
+}
 
-    </section>
+.intro p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 17px;
+}
 
-    <section class="catalog">
+/* ===== VÍDEOS PRINCIPAIS ===== */
 
-        <div class="card">
-            <iframe src="https://www.youtube.com/embed/WUtrZGXTY9Q"
-                allowfullscreen></iframe>
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 30px;
+    padding: 30px;
+}
 
-            <h3>Acessibilidade no Campo</h3>
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #556b2f;
+    transition: .3s;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
 
-            <p>
-                Conheça como a acessibilidade melhora a qualidade de vida das pessoas que vivem e trabalham
-                no meio rural.
-            </p>
+.card:hover {
+    transform: scale(1.03);
+}
 
-        </div>
+.card iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+}
 
-        <div class="card">
+.card h3 {
+    color: #2f6db5;
+    padding: 15px 15px 0;
+}
 
-            <iframe src="https://www.youtube.com/embed/zkQu0QNcWjA"
-                allowfullscreen></iframe>
+.card p {
+    padding: 0 15px 20px;
+    text-align: justify;
+}
 
-            <h3>Tecnologia e Inclusão Rural</h3>
+/* ===== RECOMENDAÇÕES ===== */
 
-            <p>
-                A inovação permite que pessoas com diferentes necessidades tenham mais autonomia
-                e oportunidades no campo.
-            </p>
+.recomendados {
+    padding: 30px;
+}
 
-        </div>
+.recomendados h2 {
+    color: #556b2f;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
 
-    </section>
+.fila-videos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+}
 
-    <section class="recomendados">
+.fila-videos::-webkit-scrollbar {
+    display: none;
+}
 
-        <h2>Mais vídeos sobre o tema</h2>
+.rec-card {
+    min-width: 320px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 8px rgba(0,0,0,.12);
+    flex-shrink: 0;
+    transition: .3s;
+}
 
-        <div class="fila-videos">
+.rec-card:hover {
+    transform: scale(1.04);
+}
 
-            <div class="rec-card">
-                <iframe src="https://www.youtube.com/embed/wyH7ti7izbk"
-                    allowfullscreen></iframe>
+.rec-card iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+}
 
-                <p>Importância da acessibilidade e inclusão.</p>
-            </div>
+.rec-card p {
+    padding: 12px;
+    text-align: center;
+    color: #2f6db5;
+    font-weight: bold;
+}
 
-            <div class="rec-card">
-                <iframe src="https://www.youtube.com/embed/C7YE8NizCqU"
-                    allowfullscreen></iframe>
+/* ===== INFORMAÇÕES ===== */
 
-                <p>Tecnologia aplicada ao desenvolvimento rural.</p>
-            </div>
+.informacoes {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    border-left: 8px solid #d4af37;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
 
-            <div class="rec-card">
-                <iframe src="https://www.youtube.com/embed/pLQ_gzUCDlc"
-                    allowfullscreen></iframe>
+.informacoes h2 {
+    color: #556b2f;
+}
 
-                <p>Inovação e qualidade de vida no campo.</p>
-            </div>
+.informacoes p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 17px;
+}
 
-            <div class="rec-card">
-                <iframe src="https://www.youtube.com/embed/LKoWNlF0-5U"
-                    allowfullscreen></iframe>
+/* ===== RODAPÉ ===== */
 
-                <p>Inclusão, educação e oportunidades para todos.</p>
-            </div>
+footer {
+    margin-top: 40px;
+    background: #556b2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
 
-        </div>
+/* ===== RESPONSIVO ===== */
 
-    </section>
+@media (max-width: 768px) {
 
-    <section class="informacoes">
+    header h1 {
+        font-size: 36px;
+    }
 
-        <h2>Por que falar sobre acessibilidade?</h2>
+    .intro,
+    .informacoes {
+        width: 92%;
+    }
 
+    .catalog {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card iframe {
+        height: 200px;
+    }
+
+    .rec-card {
+        min-width: 280px;
+    }
+
+}
         <p>
             A acessibilidade garante que todas as pessoas possam participar da sociedade de forma
             independente e com igualdade de oportunidades. No meio rural, isso significa adaptar
