@@ -1,116 +1,134 @@
-body {
-    background: #000;
-    color: white;
-    font-family: 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-header {
-    text-align: center;
-    padding: 30px;
-    border-bottom: 2px solid red;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTNG - Agrinho Paraná</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-header h1 {
-    font-size: 45px;
-    color: red;
-    text-shadow: 0 0 12px red;
-    margin: 0;
-}
+<body>
 
-header p {
-    color: #ccc;
-    font-size: 16px;
-}
+    <header>
+        <h1>CTNG</h1>
+        <p>Acessibilidade no Campo: Tecnologia, Inclusão e Desenvolvimento Rural</p>
+    </header>
 
-.catalog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    gap: 30px;
-    padding: 30px;
-}
+    <section class="intro">
 
-.card {
-    background: #111;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid red;
-    box-shadow: 0 0 10px red;
-    transition: transform 0.3s;
-}
+        <h2>Bem-vindo ao CTNG</h2>
 
-.card:hover {
-    transform: scale(1.05);
-}
+        <p>
+            O Agrinho é um programa que incentiva a educação, a cidadania e o desenvolvimento sustentável.
+            Neste projeto, apresentamos como a acessibilidade pode transformar a vida das pessoas no meio
+            rural, permitindo que todos tenham oportunidades iguais para estudar, trabalhar e participar
+            da sociedade.
+        </p>
 
-iframe {
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-}
+        <p>
+            A tecnologia tem um papel fundamental nessa transformação, oferecendo equipamentos,
+            máquinas adaptadas e recursos digitais que tornam o campo mais inclusivo, produtivo e
+            acessível para todos.
+        </p>
 
-.card h3 {
-    color: red;
-    text-shadow: 0 0 5px red;
-}
+    </section>
 
-.card p {
-    color: #ccc;
-}
-/* ======== SEÇÃO DE RECOMENDADOS ======== */
+    <section class="catalog">
 
-.recomendados {
-    margin-top: 40px;
-}
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/WUtrZGXTY9Q"
+                allowfullscreen></iframe>
 
-.recomendados h2 {
-    color: red;
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+            <h3>Acessibilidade no Campo</h3>
 
-/* Fila horizontal estilo Netflix */
-.fila-videos {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;
+            <p>
+                Conheça como a acessibilidade melhora a qualidade de vida das pessoas que vivem e trabalham
+                no meio rural.
+            </p>
 
-    /* Deixa a barra de rolagem invisível */
-    scrollbar-width: none; 
-}
-.fila-videos::-webkit-scrollbar {
-    display: none;
-}
+        </div>
 
-/* Cada card */
-.rec-card {
-    min-width: 300px;       /* tamanho horizontal fixo para ficar tipo cards Netflix */
-    flex-shrink: 0;         /* impede de encolher */
-    text-align: left;
-}
+        <div class="card">
 
-/* Vídeo */
-.rec-card iframe {
-    width: 100%;
-    height: 170px;
-    border-radius: 8px;
-    border: 2px solid red;
-}
+            <iframe src="https://www.youtube.com/embed/zkQu0QNcWjA"
+                allowfullscreen></iframe>
 
-/* Título abaixo dos vídeos */
-.rec-card p {
-    margin-top: 8px;
-    font-size: 16px;
-    color: red;
-    font-weight: 500;
-}: 500;
-}
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid red;
-    color: #777;
-}
+            <h3>Tecnologia e Inclusão Rural</h3>
+
+            <p>
+                A inovação permite que pessoas com diferentes necessidades tenham mais autonomia
+                e oportunidades no campo.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="recomendados">
+
+        <h2>Mais vídeos sobre o tema</h2>
+
+        <div class="fila-videos">
+
+            <div class="rec-card">
+                <iframe src="https://www.youtube.com/embed/wyH7ti7izbk"
+                    allowfullscreen></iframe>
+
+                <p>Importância da acessibilidade e inclusão.</p>
+            </div>
+
+            <div class="rec-card">
+                <iframe src="https://www.youtube.com/embed/C7YE8NizCqU"
+                    allowfullscreen></iframe>
+
+                <p>Tecnologia aplicada ao desenvolvimento rural.</p>
+            </div>
+
+            <div class="rec-card">
+                <iframe src="https://www.youtube.com/embed/pLQ_gzUCDlc"
+                    allowfullscreen></iframe>
+
+                <p>Inovação e qualidade de vida no campo.</p>
+            </div>
+
+            <div class="rec-card">
+                <iframe src="https://www.youtube.com/embed/LKoWNlF0-5U"
+                    allowfullscreen></iframe>
+
+                <p>Inclusão, educação e oportunidades para todos.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="informacoes">
+
+        <h2>Por que falar sobre acessibilidade?</h2>
+
+        <p>
+            A acessibilidade garante que todas as pessoas possam participar da sociedade de forma
+            independente e com igualdade de oportunidades. No meio rural, isso significa adaptar
+            espaços, equipamentos, transportes e tecnologias para atender às necessidades de todos.
+        </p>
+
+        <p>
+            Quando investimos em inclusão, fortalecemos a agricultura, valorizamos as famílias do
+            campo e construímos um futuro mais justo, sustentável e humano.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Projeto desenvolvido para o Concurso Agrinho Paraná • CTNG • Tema:
+            Acessibilidade no Campo
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
